@@ -3,3 +3,7 @@
   justify-content: center;
   margin-top: 15px;
 }
+
+.main select {
+  margin-left: 5px;
+}
