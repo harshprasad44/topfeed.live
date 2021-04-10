@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
-import { Toolbar } from "../../components/toolbar";
-import Country from "../../components/country";
-import styles from "../../styles/Feed.module.css";
+import { Toolbar } from "../../../components/toolbar";
+import Country from "../../../components/country";
+import styles from "../../../styles/Feed.module.css";
 
 const Feed = ({ pageNumber, articles }) => {
   const router = useRouter();
@@ -10,7 +10,7 @@ const Feed = ({ pageNumber, articles }) => {
     <div className="page-container">
       <Toolbar />
       <Country />
-      <h3 className={styles.countryFeed}>United States Feed</h3>
+      <h3 className={styles.countryFeed}>Hong Kong Feed</h3>
       <div className={styles.main}>
         {articles.map((article, index) => (
           <div key={index} className={styles.post}>
@@ -33,7 +33,7 @@ const Feed = ({ pageNumber, articles }) => {
         <div
           onClick={() => {
             if (pageNumber > 1) {
-              router.push(`/feed/${pageNumber - 1}`);
+              router.push(`/feed/hk/${pageNumber - 1}`);
             }
           }}
           className={pageNumber === 1 ? styles.disabled : styles.active}
@@ -46,7 +46,7 @@ const Feed = ({ pageNumber, articles }) => {
         <div
           onClick={() => {
             if (pageNumber < 5) {
-              router.push(`/feed/${pageNumber + 1}`);
+              router.push(`/feed/hk/${pageNumber + 1}`);
             }
           }}
           className={pageNumber === 5 ? styles.disabled : styles.active}
@@ -71,7 +71,7 @@ export const getServerSideProps = async (pageContext) => {
   }
 
   const apiResponse = await fetch(
-    `https://newsapi.org/v2/top-headlines?country=us&pageSize=5&page=${pageNumber}`,
+    `https://newsapi.org/v2/top-headlines?country=hk&pageSize=5&page=${pageNumber}`,
     {
       headers: {
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,

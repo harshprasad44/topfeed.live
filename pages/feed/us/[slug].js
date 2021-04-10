@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
-import { Toolbar } from "../../components/toolbar";
-import Country from "../../components/country";
-import styles from "../../styles/Feed.module.css";
+import { Toolbar } from "../../../components/toolbar";
+import Country from "../../../components/country";
+import styles from "../../../styles/Feed.module.css";
 
 const Feed = ({ pageNumber, articles }) => {
   const router = useRouter();
@@ -33,7 +33,7 @@ const Feed = ({ pageNumber, articles }) => {
         <div
           onClick={() => {
             if (pageNumber > 1) {
-              router.push(`/feed/${pageNumber - 1}`);
+              router.push(`/feed/us/${pageNumber - 1}`);
             }
           }}
           className={pageNumber === 1 ? styles.disabled : styles.active}
@@ -46,7 +46,7 @@ const Feed = ({ pageNumber, articles }) => {
         <div
           onClick={() => {
             if (pageNumber < 5) {
-              router.push(`/feed/${pageNumber + 1}`);
+              router.push(`/feed/us/${pageNumber + 1}`);
             }
           }}
           className={pageNumber === 5 ? styles.disabled : styles.active}

@@ -33,3 +33,9 @@
   cursor: not-allowed;
   color: rgb(179, 179, 179);
 }
+
+.countryFeed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
