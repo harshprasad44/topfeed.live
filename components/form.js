@@ -1,0 +1,33 @@
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import styles from "../styles/Form.module.css";
+
+const form = () => {
+  const router = useRouter();
+  const [searchValue, setSearchValue] = useState();
+
+  return (
+    <form
+      onSubmit={(e) => e.preventDefault()}
+      className={styles.example}
+      style={{ margin: "auto", maxWidth: "300px" }}
+    >
+      <input
+        onChange={(e) => setSearchValue(e.target.value)}
+        type="text"
+        placeholder="Search..."
+        name="search2"
+      />
+      <button
+        type="submit"
+        onClick={(e) => router.push(`/search?value=${searchValue}`)}
+      >
+        <FontAwesomeIcon icon={faSearch} />
+      </button>
+    </form>
+  );
+};
+
+export default form;

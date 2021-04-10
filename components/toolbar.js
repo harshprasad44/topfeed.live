@@ -5,6 +5,7 @@ export const Toolbar = () => {
   const router = useRouter();
   let feed = router.pathname.split("/").includes("feed");
   let home = router.pathname === "/";
+  let search = router.pathname.split("/").includes("search");
 
   return (
     <div className={styles.main}>
@@ -30,10 +31,16 @@ export const Toolbar = () => {
         <div onClick={() => router.push("/feed/1")}>Feed</div>
       )}
 
-      <div onClick={() => router.push("/eom")}>EOM</div>
-      <div onClick={() => (window.location.href = "https://www.google.com")}>
-        Twitter
-      </div>
+      {search ? (
+        <div
+          style={{ marginBottom: "1px", borderBottom: "black solid" }}
+          onClick={() => router.push("/search")}
+        >
+          Search
+        </div>
+      ) : (
+        <div onClick={() => router.push("/search")}>Search</div>
+      )}
     </div>
   );
 };
