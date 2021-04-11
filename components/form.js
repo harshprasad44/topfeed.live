@@ -22,7 +22,7 @@ const form = () => {
       />
       <button
         type="submit"
-        onClick={(e) => router.push(`/search?value=${searchValue}`)}
+        onClick={(e) => router.push(`/search/${searchValue}/1`)}
       >
         <FontAwesomeIcon icon={faSearch} />
       </button>

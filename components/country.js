@@ -14,7 +14,7 @@ const Country = () => {
         name="countryList"
         form="countryform"
       >
-        <option value="us">Countries List</option>
+        <option value="us">Choose</option>
         <option value="ar">Argentina</option>
         <option value="at">Austria</option>
         <option value="au">Australia</option>
