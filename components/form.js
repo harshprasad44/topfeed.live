@@ -19,6 +19,7 @@ const form = () => {
         type="text"
         placeholder="Search..."
         name="search2"
+        required
       />
       <button
         type="submit"
