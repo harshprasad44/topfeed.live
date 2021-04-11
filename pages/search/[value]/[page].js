@@ -71,8 +71,15 @@ export const getServerSideProps = async (pageContext) => {
     };
   }
 
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, "0");
+  var mm = String(today.getMonth() + 0).padStart(2, "0"); //January is 0!
+  var yyyy = today.getFullYear();
+
+  today = `${yyyy}-${mm}-${dd}`;
+
   const apiResponse = await fetch(
-    `https://newsapi.org/v2/everything?q=${searchValue}&from=2021-04-09&to=2021-04-10&sortBy=popularity&pageSize=5&page=${pageNumber}`,
+    `https://newsapi.org/v2/everything?q=${searchValue}&from=${today}&sortBy=popularity&pageSize=5&page=${pageNumber}`,
     {
       headers: {
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
