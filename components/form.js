@@ -12,7 +12,7 @@ const form = () => {
     <form
       onSubmit={(e) => e.preventDefault()}
       className={styles.example}
-      style={{ margin: "auto", maxWidth: "300px" }}
+      style={{ margin: "auto", maxWidth: "400px", paddingTop: "20px" }}
     >
       <input
         onChange={(e) => setSearchValue(e.target.value)}

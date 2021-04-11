@@ -1,4 +1,11 @@
 import { useRouter } from "next/router";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faGlobe,
+  faSearch,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import styles from "../styles/Toolbar.module.css";
 
 export const Toolbar = () => {
@@ -14,10 +21,12 @@ export const Toolbar = () => {
           style={{ marginBottom: "1px", borderBottom: "black solid" }}
           onClick={() => router.push("/")}
         >
-          Home
+          <FontAwesomeIcon icon={faHome} /> Home
         </div>
       ) : (
-        <div onClick={() => router.push("/")}>Home</div>
+        <div onClick={() => router.push("/")}>
+          <FontAwesomeIcon icon={faHome} /> Home
+        </div>
       )}
 
       {feed ? (
@@ -25,10 +34,12 @@ export const Toolbar = () => {
           style={{ marginBottom: "1px", borderBottom: "black solid" }}
           onClick={() => router.push("/feed/1")}
         >
-          Feed
+          <FontAwesomeIcon icon={faGlobe} /> Feed
         </div>
       ) : (
-        <div onClick={() => router.push("/feed/1")}>Feed</div>
+        <div onClick={() => router.push("/feed/1")}>
+          <FontAwesomeIcon icon={faGlobe} /> Feed
+        </div>
       )}
 
       {search ? (
@@ -36,11 +47,21 @@ export const Toolbar = () => {
           style={{ marginBottom: "1px", borderBottom: "black solid" }}
           onClick={() => router.push("/search")}
         >
-          Search
+          <FontAwesomeIcon icon={faSearch} /> Search
         </div>
       ) : (
-        <div onClick={() => router.push("/search")}>Search</div>
+        <div onClick={() => router.push("/search")}>
+          <FontAwesomeIcon icon={faSearch} /> Search
+        </div>
       )}
+
+      <div
+        onClick={() =>
+          window.open(`https://harshprasad.com/contact.php`, "_blank")
+        }
+      >
+        <FontAwesomeIcon icon={faUser} /> Contact
+      </div>
     </div>
   );
 };
