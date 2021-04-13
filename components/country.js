@@ -55,7 +55,7 @@ const Country = () => {
         <option value="ro">Romania</option>
         <option value="rs">Serbia</option>
         <option value="ru">Russia</option>
-        <option value="sa">South Africa</option>
+        <option value="za">South Africa</option>
         <option value="se">Sweden</option>
         <option value="sg">Singapore</option>
         <option value="si">Slovenia</option>
@@ -68,7 +68,6 @@ const Country = () => {
         <option value="gb">United Kingdom</option>
         <option value="us">United States</option>
         <option value="ve">Venezuela</option>
-        <option value="za">Zambia</option>
       </select>
     </div>
   );

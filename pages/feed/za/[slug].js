@@ -10,7 +10,7 @@ const Feed = ({ pageNumber, articles }) => {
     <div className="page-container">
       <Toolbar />
       <Country />
-      <h3 className={styles.countryFeed}>Zambia Feed</h3>
+      <h3 className={styles.countryFeed}>South Africa Feed</h3>
       <div className={styles.main}>
         {articles.map((article, index) => (
           <div key={index} className={styles.post}>
