@@ -11,35 +11,235 @@ const Feed = ({ pageNumber, articles }) => {
     <>
       <NextSeo
         title="Top News Feed Live - Fetch latest news across the globe"
-        description="This portal allows you to get worldwide news online along with titles and images, you can also search news country wise in different languages, providing better search results than other portals."
+        description="This portal allows you to get latest worldwide news online along with titles and images, you can also search news country wise in different languages, providing better search results than other portals."
         openGraph={{
           site_name: "Top News Feed Live",
           title: "Top News Feed Live",
           description:
-            "This portal allows you to get worldwide news online along with titles and images, you can also search news country wise in different languages, providing better search results than other portals.",
+            "This portal allows you to get latest worldwide news online along with titles and images, you can also search news country wise in different languages, providing better search results than other portals.",
         }}
         additionalLinkTags={[
           {
             rel: "canonical",
-            hreflang: "en",
+            hrefLang: "en",
             href: "https://topfeed.live/feed/1/",
           },
         ]}
         languageAlternates={[
           {
-            hrefLang: "de-AT",
+            hrefLang: "es-ar",
+            href: "https://topfeed.live/feed/ar/1",
+          },
+          {
+            hrefLang: "de-at",
             href: "https://topfeed.live/feed/at/1",
           },
           {
-            hrefLang: "en-GB",
+            hrefLang: "en-au",
+            href: "https://topfeed.live/feed/au/1",
+          },
+          {
+            hrefLang: "fr-be",
+            href: "https://topfeed.live/feed/be/1",
+          },
+          {
+            hrefLang: "bg-bg",
+            href: "https://topfeed.live/feed/bg/1",
+          },
+          {
+            hrefLang: "pt-br",
+            href: "https://topfeed.live/feed/br/1",
+          },
+          {
+            hrefLang: "en-ca",
+            href: "https://topfeed.live/feed/ca/1",
+          },
+          {
+            hrefLang: "de-sz",
+            href: "https://topfeed.live/feed/ch/1",
+          },
+          {
+            hrefLang: "zh-cn",
+            href: "https://topfeed.live/feed/cn/1",
+          },
+          {
+            hrefLang: "es-co",
+            href: "https://topfeed.live/feed/co/1",
+          },
+          {
+            hrefLang: "es-cu",
+            href: "https://topfeed.live/feed/cu/1",
+          },
+          {
+            hrefLang: "cs-cz",
+            href: "https://topfeed.live/feed/cz/1",
+          },
+          {
+            hrefLang: "de-de",
+            href: "https://topfeed.live/feed/de/1",
+          },
+          {
+            hrefLang: "ar-eg",
+            href: "https://topfeed.live/feed/eg/1",
+          },
+          {
+            hrefLang: "fr-fr",
+            href: "https://topfeed.live/feed/fr/1",
+          },
+          {
+            hrefLang: "el-gr",
+            href: "https://topfeed.live/feed/gr/1",
+          },
+          {
+            hrefLang: "zh-hk",
+            href: "https://topfeed.live/feed/hk/1",
+          },
+          {
+            hrefLang: "hu-hu",
+            href: "https://topfeed.live/feed/hu/1",
+          },
+          {
+            hrefLang: "id-id",
+            href: "https://topfeed.live/feed/id/1",
+          },
+          {
+            hrefLang: "en-ie",
+            href: "https://topfeed.live/feed/ie/1",
+          },
+          {
+            hrefLang: "he-il",
+            href: "https://topfeed.live/feed/il/1",
+          },
+          {
+            hrefLang: "en-in",
+            href: "https://topfeed.live/feed/in/1",
+          },
+          {
+            hrefLang: "it-it",
+            href: "https://topfeed.live/feed/it/1",
+          },
+          {
+            hrefLang: "ja-jp",
+            href: "https://topfeed.live/feed/jp/1",
+          },
+          {
+            hrefLang: "ko-kr",
+            href: "https://topfeed.live/feed/kr/1",
+          },
+          {
+            hrefLang: "lt-lt",
+            href: "https://topfeed.live/feed/lt/1",
+          },
+          {
+            hrefLang: "lv-lv",
+            href: "https://topfeed.live/feed/lv/1",
+          },
+          {
+            hrefLang: "fr-ma",
+            href: "https://topfeed.live/feed/ma/1",
+          },
+          {
+            hrefLang: "es-mx",
+            href: "https://topfeed.live/feed/mx/1",
+          },
+          {
+            hrefLang: "en-my",
+            href: "https://topfeed.live/feed/my/1",
+          },
+          {
+            hrefLang: "en-ng",
+            href: "https://topfeed.live/feed/ng/1",
+          },
+          {
+            hrefLang: "nl-nl",
+            href: "https://topfeed.live/feed/nl/1",
+          },
+          {
+            hrefLang: "no-no",
+            href: "https://topfeed.live/feed/no/1",
+          },
+          {
+            hrefLang: "en-nz",
+            href: "https://topfeed.live/feed/nz/1",
+          },
+          {
+            hrefLang: "en-ph",
+            href: "https://topfeed.live/feed/ph/1",
+          },
+          {
+            hrefLang: "pl-pl",
+            href: "https://topfeed.live/feed/pl/1",
+          },
+          {
+            hrefLang: "pt-pt",
+            href: "https://topfeed.live/feed/pt/1",
+          },
+          {
+            hrefLang: "ro-ro",
+            href: "https://topfeed.live/feed/ro/1",
+          },
+          {
+            hrefLang: "bs-rs",
+            href: "https://topfeed.live/feed/rs/1",
+          },
+          {
+            hrefLang: "ru-ru",
+            href: "https://topfeed.live/feed/ru/1",
+          },
+          {
+            hrefLang: "en-za",
+            href: "https://topfeed.live/feed/za/1",
+          },
+          {
+            hrefLang: "sv-se",
+            href: "https://topfeed.live/feed/se/1",
+          },
+          {
+            hrefLang: "en-sg",
+            href: "https://topfeed.live/feed/sg/1",
+          },
+          {
+            hrefLang: "sl-si",
+            href: "https://topfeed.live/feed/si/1",
+          },
+          {
+            hrefLang: "sk-sk",
+            href: "https://topfeed.live/feed/sk/1",
+          },
+          {
+            hrefLang: "th-th",
+            href: "https://topfeed.live/feed/th/1",
+          },
+          {
+            hrefLang: "tr-tr",
+            href: "https://topfeed.live/feed/tr/1",
+          },
+          {
+            hrefLang: "zh-tw",
+            href: "https://topfeed.live/feed/tw/1",
+          },
+          {
+            hrefLang: "uk-ua",
+            href: "https://topfeed.live/feed/ua/1",
+          },
+          {
+            hrefLang: "ar-ae",
+            href: "https://topfeed.live/feed/ae/1",
+          },
+          {
+            hrefLang: "en-gb",
             href: "https://topfeed.live/feed/gb/1",
+          },
+          {
+            hrefLang: "es-ve",
+            href: "https://topfeed.live/feed/ve/1",
           },
         ]}
       />
       <div className="page-container">
         <Toolbar />
         <Country />
-        <h3 className={styles.countryFeed}>United States Feed</h3>
+        <h3 className={styles.countryFeed}>Worldwide Feed</h3>
         <div className={styles.main}>
           {articles.map((article, index) => (
             <div key={index} className={styles.post}>

@@ -26,7 +26,7 @@ const Country = () => {
         <option value="cn">China</option>
         <option value="co">Colombia</option>
         <option value="cu">Cuba</option>
-        <option value="cz">Czechia</option>
+        <option value="cz">Czech Republic</option>
         <option value="de">Germany</option>
         <option value="eg">Egypt</option>
         <option value="fr">France</option>
