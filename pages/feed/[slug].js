@@ -14,9 +14,32 @@ const Feed = ({ pageNumber, articles }) => {
         description="This portal allows you to get latest worldwide news online along with titles and images, you can also search news country wise in different languages, providing better search results than other portals."
         openGraph={{
           site_name: "Top News Feed Live",
-          title: "Top News Feed Live",
+          title: "Top News Feed Live - Fetch latest news across the globe",
+          url: "https://topfeed.live/feed/1/",
           description:
             "This portal allows you to get latest worldwide news online along with titles and images, you can also search news country wise in different languages, providing better search results than other portals.",
+          images: [
+            {
+              url: articles[0].urlToImage,
+              alt: "Top Feed News Image",
+            },
+            {
+              url: articles[1].urlToImage,
+              alt: "Top Feed News Image",
+            },
+            {
+              url: articles[2].urlToImage,
+              alt: "Top Feed News Image",
+            },
+            {
+              url: articles[3].urlToImage,
+              alt: "Top Feed News Image",
+            },
+            {
+              url: articles[4].urlToImage,
+              alt: "Top Feed News Image",
+            },
+          ],
         }}
         additionalLinkTags={[
           {
