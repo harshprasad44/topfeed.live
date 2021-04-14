@@ -1,7 +1,5 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import styles from "../styles/Form.module.css";
 
 const form = () => {
@@ -25,7 +23,7 @@ const form = () => {
         type="submit"
         onClick={(e) => router.push(`/search/${searchValue}/1`)}
       >
-        <FontAwesomeIcon icon={faSearch} />
+        <img src="/search.png" alt="search icon for topfeed" />
       </button>
     </form>
   );

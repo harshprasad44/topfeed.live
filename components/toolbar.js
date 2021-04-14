@@ -1,11 +1,4 @@
 import { useRouter } from "next/router";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faGlobe,
-  faSearch,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
 import styles from "../styles/Toolbar.module.css";
 
 export const Toolbar = () => {
@@ -21,11 +14,14 @@ export const Toolbar = () => {
           style={{ marginBottom: "1px", borderBottom: "black solid" }}
           onClick={() => router.push("/")}
         >
-          <FontAwesomeIcon icon={faHome} /> Home
+          <img src="/home.png" alt="home icon for topfeed" />
+          Home
         </div>
       ) : (
         <div onClick={() => router.push("/")}>
-          <FontAwesomeIcon icon={faHome} /> Home
+          {" "}
+          <img src="/home.png" alt="home icon for topfeed" />
+          Home
         </div>
       )}
 
@@ -34,11 +30,13 @@ export const Toolbar = () => {
           style={{ marginBottom: "1px", borderBottom: "black solid" }}
           onClick={() => router.push("/feed/1")}
         >
-          <FontAwesomeIcon icon={faGlobe} /> Feed
+          <img src="/globe.png" alt="globe icon for topfeed" />
+          Feed
         </div>
       ) : (
         <div onClick={() => router.push("/feed/1")}>
-          <FontAwesomeIcon icon={faGlobe} /> Feed
+          <img src="/globe.png" alt="globe icon for topfeed" />
+          Feed
         </div>
       )}
 
@@ -47,11 +45,13 @@ export const Toolbar = () => {
           style={{ marginBottom: "1px", borderBottom: "black solid" }}
           onClick={() => router.push("/search")}
         >
-          <FontAwesomeIcon icon={faSearch} /> Search
+          <img src="/search.png" alt="search icon for topfeed" />
+          Search
         </div>
       ) : (
         <div onClick={() => router.push("/search")}>
-          <FontAwesomeIcon icon={faSearch} /> Search
+          <img src="/search.png" alt="search icon for topfeed" />
+          Search
         </div>
       )}
 
@@ -60,7 +60,8 @@ export const Toolbar = () => {
           window.open(`https://harshprasad.com/contact.php`, "_blank")
         }
       >
-        <FontAwesomeIcon icon={faUser} /> Contact
+        <img src="/contact.png" alt="contact icon for topfeed" />
+        Contact
       </div>
     </div>
   );

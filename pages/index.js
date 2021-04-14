@@ -21,10 +21,7 @@ export default function Home() {
 
         <div className={styles.main}>
           <img src="/favicon.png" alt="topfeed.live icon" />
-          <h1>
-            <a href="https://topfeed.live/">topfeed.live</a> Fetch latest news
-            across the globe
-          </h1>
+          <h1>Fetch latest news across the globe</h1>
           <h3>
             This portal allows you to get worldwide news online along with
             titles and images, you can also search news country wise in

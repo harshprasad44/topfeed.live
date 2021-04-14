@@ -13,9 +13,10 @@
 
 .main h3 {
   font-weight: 400;
-  max-width: 70%;
+  max-width: 80%;
 }
 
 .main ol {
   font-weight: 400;
+  font-size: large;
 }

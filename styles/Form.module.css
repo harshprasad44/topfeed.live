@@ -28,3 +28,7 @@ form.example::after {
   clear: both;
   display: table;
 }
+
+form.example img {
+  width: inherit;
+}
