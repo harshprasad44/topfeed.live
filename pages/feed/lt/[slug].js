@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
-import { NextSeo } from "next-seo";
 import { Toolbar } from "../../../components/toolbar";
 import Country from "../../../components/country";
 import styles from "../../../styles/Feed.module.css";
